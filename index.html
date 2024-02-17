@@ -80,17 +80,21 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title font-medium text-2xl">Rectangle</h2>
-            <p class="text-lg">Area = 0cm<sup>2</sup></p>
+            <p class="text-lg">
+              Area = <span id="rectangleResult">0</span>cm<sup>2</sup>
+            </p>
             <p>Area(A) = w X l</p>
 
             <div class="input flex flex-row w-full gap-2">
               <input
+                id="rectangleWidth"
                 type="text"
                 placeholder="w"
                 class="w-1/3 border-2 border-stone-700 rounded-lg text-center"
               />
               <span class="flex flex-col justify-end">cm</span>
               <input
+                id="rectangleLength"
                 type="text"
                 placeholder="l"
                 class="w-1/3 ml-2 border-2 border-stone-700 rounded-lg text-center"
@@ -99,6 +103,7 @@
             </div>
             <div class="card-actions w-full mt-3">
               <button
+                id="rectangleBtn"
                 class="btn text-white text-lg font-medium bg-[#1090D8] w-11/12 m-auto"
               >
                 Calculate
@@ -114,17 +119,21 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title font-medium text-2xl">Parallelogram</h2>
-            <p class="text-lg">Area = 0cm<sup>2</sup></p>
+            <p class="text-lg">
+              Area = <span id="perallelogramResult">0</span>cm<sup>2</sup>
+            </p>
             <p>Area(A) = b X h</p>
 
             <div class="input flex flex-row w-full gap-2">
               <input
+                id="perallelogramBase"
                 type="text"
                 placeholder="b"
                 class="w-1/3 border-2 border-stone-700 rounded-lg text-center"
               />
               <span class="flex flex-col justify-end">cm</span>
               <input
+                id="perallelogramHeight"
                 type="text"
                 placeholder="h"
                 class="w-1/3 ml-2 border-2 border-stone-700 rounded-lg text-center"
@@ -133,6 +142,7 @@
             </div>
             <div class="card-actions w-full mt-3">
               <button
+                id="perallelogramBtn"
                 class="btn text-white text-lg font-medium bg-[#1090D8] w-11/12 m-auto"
               >
                 Calculate
@@ -143,22 +153,26 @@
 
         <!-- card-4 -->
         <div class="card w-11/12 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
+          <figure class="px-10 pt-10 h-1/2">
             <img src="images/rhombus.png" alt="Rhombus" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title font-medium text-2xl">Triangle</h2>
-            <p class="text-lg">Area = 0cm<sup>2</sup></p>
+            <h2 class="card-title font-medium text-2xl">Rhombus</h2>
+            <p class="text-lg">
+              Area = <span id="rhombusResult">0</span>cm<sup>2</sup>
+            </p>
             <p>Area(A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
 
             <div class="input flex flex-row w-full gap-2">
               <input
+                id="rhombusD1"
                 type="text"
                 placeholder="d1"
                 class="w-1/3 border-2 border-stone-700 rounded-lg text-center"
               />
               <span class="flex flex-col justify-end">cm</span>
               <input
+                id="rhombusD2"
                 type="text"
                 placeholder="d2"
                 class="w-1/3 ml-2 border-2 border-stone-700 rounded-lg text-center"
@@ -167,6 +181,7 @@
             </div>
             <div class="card-actions w-full mt-3">
               <button
+                id="rhombusBtn"
                 class="btn text-white text-lg font-medium bg-[#1090D8] w-11/12 m-auto"
               >
                 Calculate
@@ -177,22 +192,26 @@
 
         <!-- card-5 -->
         <div class="card w-11/12 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
+          <figure class="px-10 pt-10 h-1/2">
             <img src="images/pentagon.png" alt="Pentagon" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title font-medium text-2xl">Pentagon</h2>
-            <p class="text-lg">Area = 0cm<sup>2</sup></p>
+            <p class="text-lg">
+              Area = <span id="pentagonResult">0</span>cm<sup>2</sup>
+            </p>
             <p>Area(A) = 0.5 X p X b</p>
 
             <div class="input flex flex-row w-full gap-2">
               <input
+                id="pentagonPerimeter"
                 type="text"
                 placeholder="p"
                 class="w-1/3 border-2 border-stone-700 rounded-lg text-center"
               />
               <span class="flex flex-col justify-end">cm</span>
               <input
+                id="pentagonApothem"
                 type="text"
                 placeholder="b"
                 class="w-1/3 ml-2 border-2 border-stone-700 rounded-lg text-center"
@@ -201,6 +220,7 @@
             </div>
             <div class="card-actions w-full mt-3">
               <button
+                id="pentagonBtn"
                 class="btn text-white text-lg font-medium bg-[#1090D8] w-11/12 m-auto"
               >
                 Calculate
@@ -211,22 +231,26 @@
 
         <!-- card-6 -->
         <div class="card w-11/12 bg-base-100 shadow-xl">
-          <figure class="px-10 pt-10">
+          <figure class="px-10 pt-10 h-1/2">
             <img src="images/ellipse.png" alt="Ellipse" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title font-medium text-2xl">Ellipse</h2>
-            <p class="text-lg">Area = 0cm<sup>2</sup></p>
+            <p class="text-lg">
+              Area = <span id="ellipseResult">0</span>cm<sup>2</sup>
+            </p>
             <p>Area(A) = <span>&pi;</span>ab</p>
 
             <div class="input flex flex-row w-full gap-2">
               <input
+                id="ellipsePerimeter"
                 type="text"
                 placeholder="a"
                 class="w-1/3 border-2 border-stone-700 rounded-lg text-center"
               />
               <span class="flex flex-col justify-end">cm</span>
               <input
+                id="ellipseApothem"
                 type="text"
                 placeholder="b"
                 class="w-1/3 ml-2 border-2 border-stone-700 rounded-lg text-center"
@@ -235,6 +259,7 @@
             </div>
             <div class="card-actions w-full mt-3">
               <button
+                id="ellipseBtn"
                 class="btn text-white text-lg font-medium bg-[#1090D8] w-11/12 m-auto"
               >
                 Calculate
@@ -244,7 +269,7 @@
         </div>
       </section>
       <section
-        class="right w-full h-auto scroll-auto lg:w-1/3 lg:max-h-screen border-2 text-center border-[#1A1111]"
+        class="rounded-xl mt-4 lg:mt-0 right w-full min-h-80 lg:overflow-y-auto lg:w-1/2 lg:h-96 border-2 text-center border-[#1A1111]"
       >
         <h2 class="text-xl font-bold title-color underline">
           Area Calculation
@@ -253,5 +278,10 @@
       </section>
     </main>
     <script src="/script/triangle.js"></script>
+    <script src="/script/rectangle.js"></script>
+    <script src="/script/perallelogram.js"></script>
+    <script src="/script/rhombus.js"></script>
+    <script src="/script/pentagon.js"></script>
+    <script src="/script/ellipse.js"></script>
   </body>
 </html>
